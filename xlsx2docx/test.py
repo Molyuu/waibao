@@ -16,7 +16,7 @@ def search(word):
 
 
 def replace():
-    data_src = pd.read_excel(io=r"gork.xlsx", nrows=1)
+    data_src = pd.read_excel(io=r"./gork.xlsx", nrows=1)
     for i in data_src:
         ser_word = "{%s}" % i
         if search(ser_word) == ["failed,not found"]:
@@ -25,3 +25,4 @@ def replace():
 
 if __name__ == "__main__":
     replace()
+    
