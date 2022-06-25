@@ -24,7 +24,7 @@ def find_word(docx,word):
             return False
     
 
-def replace_word(docx,excel):
+def replace_word(docx,xlsx):
     doc1=DocxTemplate(docx) 
     list_row=[]
     for i in find_excel(xlsx):
