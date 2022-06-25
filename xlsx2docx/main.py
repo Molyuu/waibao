@@ -6,7 +6,9 @@ import docx
 
 def porcess_word(name,mon1,mon2,mon3,stat,left,company,year,month,day,numbers,person):
     doc1=docx.Document('src.docx') #读取文件
+    #docx内的
     list_row = ['客户档案名称','债权金额','债务金额','抵消金额','剩余债权债务确认','抵消后余额','清理账簿公司' , 'A' , 'B','C','序号','税务经理']#word中需要替换的参数
+    #xlsx内的
     list_replace=[name , mon1 , mon2 , mon3 , stat , left , company , year , month , day , numbers , person]#读取Excel的参数
     for kk in range(len(list_row)):#通过循环进行逐个参数的替换
         text_row= list_row[kk]
